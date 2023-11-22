@@ -9,4 +9,4 @@ class ManaPotion(Items):
         Character.mana += 15
         if Character.mana > Character.max_mana:
             Character.mana = Character.max_mana
-        print(f"{self.name} has been used by {Character.name}")
+        print(f"{self.name} has been used by {Character.name}") 

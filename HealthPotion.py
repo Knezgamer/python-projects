@@ -9,4 +9,4 @@ class HealingPotion(Items):
         Character.health += 15
         if Character.health > Character.max_health:
             Character.health = Character.max_health
-        print(f"{self.name} has been used by {Character.name}")
+        print(f"{self.name} has been used by {Character.name}") 

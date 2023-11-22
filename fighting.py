@@ -1,6 +1,6 @@
 def combat(player, enemy):
     while player.is_alive() and enemy.is_alive():
-
+ 
         pass
 
     if player.is_alive():
