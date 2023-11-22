@@ -1,15 +1,11 @@
-from HealthPotion import HealingPotion
-from ManaPotion import ManaPotion
-from NPC import NPC
-from character import Character
+
+from character_module import create_character
 
 
 class Story:
-    def __init__(self):
-        self.current_location = "start"
+    def start_game():
+        print("Welcome to the Adventure Game!")
 
-    def get_location(self):
-        return self.current_location
-    
-    def move(self, new_location):
-        self.current_location = new_location
+        player = create_character()
+
+        print(f"You created a character named {player.name} which class is {player.char_class}. You started adventure")
