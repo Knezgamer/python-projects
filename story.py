@@ -3,9 +3,25 @@ from character_module import create_character
 
 
 class Story:
-    def start_game():
-        print("Welcome to the Adventure Game!")
 
-        player = create_character()
+    def __init__(self):
+        self.current_location = "start"
+        self.player = None
 
-        print(f"You created a character named {player.name} which class is {player.char_class}. You started adventure")
+    def start_story(self):
+        print("Welcome to the story!")
+        print("Before u begin your adventure create a new character.")
+
+        self.player = create_character()
+
+        print("Your adventure has started!")
+
+    def get_location(self):
+        return self.current_location
+    
+    def move(self, new_location):
+        self.current_location = new_location
+
+    def show_character_info(self):
+        if self.player:
+            self.player.display_info()
