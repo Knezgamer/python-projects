@@ -20,7 +20,7 @@ def main():
             game_story.show_character_info()
         elif choice == "3":
             print("Game over. Thank you for playing!")
-            break
+            return
         else:
             print("Invalid choice. Try it again.")
 

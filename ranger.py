@@ -1,4 +1,4 @@
-from character import Character
+from character_module import Character
 
 
 class Ranger(Character):

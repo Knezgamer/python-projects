@@ -9,4 +9,4 @@ class Enemy:
         return self.health > 0
     
     def give_reward(self, Character):
-        Character.gain_gold(self.gold_rewards)
+        Character.gain_gold(self.gold_rewards)  
