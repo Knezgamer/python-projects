@@ -6,7 +6,7 @@ class Enemy:
         self.gold_rewards = gold_rewards
 
     def is_alive(self):
-        return self.health > 0
+        return self.health > 0 
     
     def give_reward(self, Character):
         Character.gain_gold(self.gold_rewards)  

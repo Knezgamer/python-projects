@@ -14,4 +14,4 @@ class NPC:
         pass
 
     def give_reward(self, Character):
-        Character.gain_gold(self.gold_rewards) 
+        Character.gain_gold(self.gold_rewards)  

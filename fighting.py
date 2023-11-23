@@ -4,6 +4,6 @@ def combat(player, enemy):
         pass
 
     if player.is_alive():
-        print("You win! Enemy has been defeated!")  
+        print("You win! Enemy has been defeated!")   
     else:
         print("You lose! Player has been defeated!")
